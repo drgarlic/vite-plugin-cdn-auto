@@ -113,4 +113,4 @@ function cdnAutoPlugin(config = {}) {
 }
 
 module.exports = cdnAutoPlugin
-cdnPlugin.default = cdnAutoPlugin
+cdnAutoPlugin.default = cdnAutoPlugin
