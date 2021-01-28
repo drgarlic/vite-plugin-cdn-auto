@@ -46,9 +46,7 @@ function cdnAutoPlugin(config = {}) {
         },
 
         async load(id) {
-            console.log('sheotnsheo')
             if (isBuild && id.startsWith(base)) {
-                console.log('s')
                 const src = await (await fetch(id)).text()
                 await init
                 let imports
