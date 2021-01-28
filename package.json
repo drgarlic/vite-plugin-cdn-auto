@@ -1,12 +1,13 @@
 {
   "name": "vite-plugin-cdn-auto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
+  "type": "module",
+  "main": "index.js",
   "author": {
     "name": "Kevin Gawlik (gawlk)",
     "url": "https://github.com/gawlk"
   },
-  "main": "index.js",
   "dependencies": {
     "es-module-lexer": "^0.3.26",
     "magic-string": "^0.25.7",

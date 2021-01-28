@@ -8,7 +8,7 @@ const providers = {
     jspm: ['https://jspm.dev/'],
 }
 
-export default function cdnAutoPlugin(config = {}) {
+function cdnAutoPlugin(config = {}) {
     const provider = config.provider || 'skypack'
     const locked = config.locked || {}
 
@@ -111,3 +111,6 @@ export default function cdnAutoPlugin(config = {}) {
         },
     }
 }
+
+module.exports = cdnAutoPlugin
+cdnPlugin.default = cdnAutoPlugin
