@@ -12,7 +12,7 @@ function cdnAutoPlugin(config = {}) {
     const provider = config.provider || 'skypack'
     const locked = config.locked || {}
 
-    if (!(provider in providers)) {
+    if (!providers[provider]) {
         throw new Error(
             `Unsupported provider: ${provider}. Supported providers: ${Object.keys(
                 providers

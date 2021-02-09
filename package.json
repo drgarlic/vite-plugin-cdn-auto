@@ -1,12 +1,18 @@
 {
   "name": "vite-plugin-cdn-auto",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "index.js",
   "author": {
     "name": "Kevin Gawlik (gawlk)",
     "url": "https://github.com/gawlk"
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {
     "es-module-lexer": "^0.3.26",
     "magic-string": "^0.25.7",
@@ -14,5 +20,8 @@
   },
   "devDependencies": {
     "@types/node-fetch": "^2.5.7"
+  },
+  "peerDependencies": {
+    "vite": "^2.0.0-beta.12"
   }
 }
